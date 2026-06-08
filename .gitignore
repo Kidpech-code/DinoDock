@@ -1,0 +1,8 @@
+# Build output — friends build their own with ./build.sh
+DinoDock.app/
+
+# macOS
+.DS_Store
+
+# Claude Code local settings (machine-specific permission allowlist)
+.claude/settings.local.json
