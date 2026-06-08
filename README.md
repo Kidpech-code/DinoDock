@@ -9,6 +9,35 @@ DinoDock เป็นแอปเล็ก ๆ ที่อยู่บน menu 
 
 ---
 
+## ภาพตัวอย่าง (Screenshots)
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="assets/image/1.png" alt="T-rex เดินบน Dock" width="100%"><br>
+      <sub><b>เดินเล่นบนขอบ Dock</b> — ก้าวเท้าสลับข้าง ตัวเด้งเบา ๆ</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="assets/image/4.png" alt="T-rex วิ่งไล่เหยื่อ" width="100%"><br>
+      <sub><b>วิ่งไล่ล่า</b> — ไล่เหยื่อตัวเล็ก</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="assets/image/3.png" alt="T-rex งีบหลับ" width="100%"><br>
+      <sub><b>งีบหลับ</b> — หลับตา มี <code>zzz</code> ลอยเหนือหัว</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="assets/image/2.png" alt="T-rex กินอาหาร" width="100%"><br>
+      <sub><b>กินอาหาร</b> — กัดกินชิ้นเนื้อ</sub>
+    </td>
+  </tr>
+</table>
+
+> ไดโนโปร่งใสและคลิกทะลุได้ จึงอยู่ร่วมกับ Dock และวอลเปเปอร์ได้อย่างกลมกลืน
+
+---
+
 ## คุณสมบัติ (Features)
 
 - **พฤติกรรมหลากหลายแบบสุ่มธรรมชาติ** — เดิน วิ่ง หยุดพัก หันมอง กระโดด งีบหลับ
