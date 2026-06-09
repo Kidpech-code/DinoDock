@@ -1,4 +1,4 @@
-import Foundation
+import Cocoa
 
 /// Pixel-art dinosaur — an orange 8-bit T-rex traced from a 44×44 reference —
 /// plus the prey it chases and the meat it eats.
@@ -226,4 +226,37 @@ enum DinoPixelArt {
         "...BB...",
         "....BB..",
     ]
+
+    // MARK: - Character art
+
+    /// The dino's body colours (the shared prop colours — prey, meat, eye-white,
+    /// black, dazed stars, dust — are merged in via `CharacterArt.palette`).
+    static let bodyPalette: [Character: NSColor] = [
+        "o": NSColor(srgbRed: 0.910, green: 0.392, blue: 0.165, alpha: 1), // orange body
+        "O": NSColor(srgbRed: 0.969, green: 0.569, blue: 0.110, alpha: 1), // light orange
+        "r": NSColor(srgbRed: 0.820, green: 0.318, blue: 0.282, alpha: 1), // red
+        "d": NSColor(srgbRed: 0.659, green: 0.208, blue: 0.098, alpha: 1), // dark-red outline
+        "y": NSColor(srgbRed: 0.980, green: 0.784, blue: 0.216, alpha: 1), // yellow belly
+        "g": NSColor(srgbRed: 0.592, green: 0.671, blue: 0.271, alpha: 1), // green patch
+        "b": NSColor(srgbRed: 0.176, green: 0.424, blue: 0.620, alpha: 1), // blue eye / feet
+    ]
+
+    /// The dino as a `CharacterArt`. It has no bespoke throw poses yet, so the
+    /// grab-and-throw feature reuses `stand` (held / get-up / tumble) and
+    /// `blink` (the woozy impact / hurt / dazed frames) — still fully throwable.
+    static let art = CharacterArt(
+        width: width,
+        height: height,
+        stand: stand,
+        walkB: walkB,
+        walkC: walkC,
+        blink: blink,
+        held: stand,
+        tumble: [stand],
+        impact: blink,
+        hurt: blink,
+        dazed: blink,
+        getUp: stand,
+        palette: CharacterArt.palette(bodyPalette)
+    )
 }
